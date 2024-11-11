@@ -1,0 +1,342 @@
+/* Google fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Variables */
+
+:root {
+    --primary-font: "Montserrat", sans-serif;
+    --primary-color: #e7e7e7; /* platinum */
+    --secondary-color: #c2c2c2; /* silver */
+    --tertiary-color: #f2c085; /* orange */
+    --quarternary-color: #f5cea3; /* light orange */
+}
+
+/* Global styles */
+
+body {
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    padding-top: 56px; /* pushes the header down under fixed navbar */
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #f2c085;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.btn:hover {
+    border: 2px solid #f2c085;
+    padding: 5.2px 11.2px;
+    background-color: #ffffff;
+}
+
+.section {
+    padding-top: 60px; /* Adjusts to account for navbar height */
+    margin-top: -60px; /* Offset to make sure section starts in the right position */
+}
+
+.form-control,
+.form-select {
+    border-radius: 0;
+    border-color: #ffffff;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border-color: black;
+}
+
+/* Navbar */
+
+#navbar .logo {
+    width: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+#navbar {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    box-shadow: 0px 6px 50px -10px black;
+}
+
+.navbar-toggler {
+    border-radius: 0;
+}
+
+.nav-link {
+    color: black;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.dropdown ul {
+    background-color: var(--quarternary-color);
+}
+
+.dropdown-item:active {
+    background-color: white;
+    border: 2px solid black;
+    padding: 2.5px 14.5px;
+    color: black;
+}
+
+/* Header */
+
+.hero {
+    height: 600px;
+    background: url("../images/hero.webp") no-repeat center center/cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-header h2 {
+    text-transform: none;
+}
+
+.main-header {
+    background-color: rgba(245, 206, 163, 0.7);
+    padding: 64px 32px;
+}
+
+.main-header .btn {
+    opacity: 1;
+}
+
+/* About */
+
+#about .card {
+    background-color: var(--secondary-color);
+    border-radius: 0;
+    border: none;
+    padding: 20px;
+}
+
+/* Introduction section */
+
+#intro .card {
+    background-color: var(--primary-color);
+    border-radius: 0;
+    border: none;
+    padding: 20px;
+}
+
+#intro .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Key principles section */
+
+#key-principles .card {
+    background-color: var(--tertiary-color);
+    border-radius: 0;
+    border: none;
+}
+
+#key-principles img {
+    border-radius: 0;
+}
+
+/* Recognising safeguarding concerns section */
+
+#recognising-concerns button {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.accordion-item:last-of-type {
+    border-bottom: none;
+}
+
+.accordion-body {
+    background-color: var(--primary-color);
+}
+
+/* Responding to safeguarding concerns section */
+
+#responding-concerns .card {
+    background-color: var(--quarternary-color);
+    border-radius: 0;
+    border: none;
+}
+
+#responding-concerns img {
+    border-radius: 0;
+}
+
+/* Contact Us section */
+
+#contact form {
+    background-color: var(--primary-color);
+}
+
+/* Workshops section */
+
+#times {
+    background: url(../images/hero.webp) no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: black;
+    background-color: rgb(242, 192, 133, 0.7);
+    padding: 30px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid #ffffff;
+}
+
+#times h3 {
+    color: black;
+}
+
+/* Booking form section */
+
+#booking-form form {
+    background-color: var(--secondary-color);
+}
+
+/* Modal */
+
+.modal-content { 
+    border-radius: 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+}
+
+footer a{
+    text-decoration: black underline;
+    color: black;
+}
+
+footer .social-links {
+    font-size: 24px;
+}
+
+/* Media queries */
+
+/* small devices (mobile phones, 576px and below */
+@media screen and (max-width: 576px) {
+    /* reduce header padding to fit smaller screens */
+    .main-header {
+        padding: 16px 8px;
+        width: 90vw;
+    }
+}
+
+/* small devices (mobile phones, 576px and up */
+@media screen and (min-width: 576px) {
+    /* Make all key principles cards the same height for consistency */
+    #key-principles .card {
+        min-height: 371px;
+    }
+}
+
+/* medium devices (tablets, 768px and up */
+@media screen and (min-width: 768px) {
+    /* Make all intro cards the same height for consistency */
+    #intro .card {
+        min-height: 330px;
+    }
+
+    /* Make all responding concern cards the same height for consistency */
+    #responding-concerns .card {
+        min-height: 820px;
+    }
+
+}
+
+/* large devices (small laptops, 992px and up */
+@media screen and (min-width: 992px) {
+    /* Make all intro cards the same height for consistency */
+    #intro .card {
+        min-height: 260px;
+    }
+
+    /* Make all responding concern cards the same height for consistency */
+    #responding-concerns .card {
+        min-height: 855px;
+    }
+
+}
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* Make all intro cards the same height for consistency */
+    #intro .card {
+        min-height: 230px;
+    }
+
+    /* Make all key principles cards the same height for consistency */
+    #key-principles .card {
+        min-height: 350px;
+    }
+
+    /* Make all responding concern cards the same height for consistency */
+    #responding-concerns .card {
+        min-height: 820px;
+    }
+}
+
+/* xl devices (large desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    /* Make all intro cards the same height for consistency */
+    #intro .card {
+        min-height: 230px;
+    }
+}
