@@ -63,6 +63,10 @@ i {
     margin-top: -60px; /* Offset to make sure section starts in the right position */
 }
 
+.card {
+    height: 100%;
+}
+
 .form-control,
 .form-select {
     border-radius: 0;
@@ -279,64 +283,6 @@ footer .social-links {
     }
 }
 
-/* small devices (mobile phones, 576px and up */
-@media screen and (min-width: 576px) {
-    /* Make all key principles cards the same height for consistency */
-    #key-principles .card {
-        min-height: 371px;
-    }
-}
 
-/* medium devices (tablets, 768px and up */
-@media screen and (min-width: 768px) {
-    /* Make all intro cards the same height for consistency */
-    #intro .card {
-        min-height: 330px;
-    }
 
-    /* Make all responding concern cards the same height for consistency */
-    #responding-concerns .card {
-        min-height: 820px;
-    }
 
-}
-
-/* large devices (small laptops, 992px and up */
-@media screen and (min-width: 992px) {
-    /* Make all intro cards the same height for consistency */
-    #intro .card {
-        min-height: 260px;
-    }
-
-    /* Make all responding concern cards the same height for consistency */
-    #responding-concerns .card {
-        min-height: 855px;
-    }
-
-}
-
-/* xl devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-    /* Make all intro cards the same height for consistency */
-    #intro .card {
-        min-height: 230px;
-    }
-
-    /* Make all key principles cards the same height for consistency */
-    #key-principles .card {
-        min-height: 350px;
-    }
-
-    /* Make all responding concern cards the same height for consistency */
-    #responding-concerns .card {
-        min-height: 820px;
-    }
-}
-
-/* xl devices (large desktops, 1400px and up) */
-@media screen and (min-width: 1400px) {
-    /* Make all intro cards the same height for consistency */
-    #intro .card {
-        min-height: 230px;
-    }
-}
